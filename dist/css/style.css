@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;400;600&family=Poppins:wght@300;400;600&display=swap");
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Fira Code", monospace;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #999999;
+  --color-primary: #4ad891;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 3.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--primary-font);
+  font-size: 2.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: var(--primary-font);
+  font-size: 2.1em;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 1.6em;
+}
+p {
+  font-family: var(--primary-font);
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+
+hr {
+  width: 5em;
+  height: 0.15em;
+  background: var(--color-primary);
+  border: 0;
+  margin: 2.4em 0;
+}
+
+.navbar {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: verdana;
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.4em 8em;
+  position: relative;
+}
+
+.navbar-logo {
+  display: inline-block;
+  margin: 0;
+}
+
+.navbar-logo-link {
+  font-size: 1.9em;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+.navbar-logo-link span {
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style: none;
+  float: left;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 3.2em;
+}
+
+.nav-link {
+  font-size: 1.6em;
+  font-family: var(--primary-font);
+  color: var(--color-grey);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.active {
+  color: var(--color-black);
+}
+
+.nav-link:hover {
+  color: var(--color-black);
+}
+
+.menu-button {
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 8em;
+}
+
+.container .text {
+  width: 40%;
+}
+
+.container .text .heading-1 {
+  margin-bottom: 0.4em;
+}
+
+.container .text .heading-5 {
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.container .text .paragraph {
+  margin-bottom: 1.6em;
+}
+.container .text .social-media {
+  display: flex;
+  align-items: center;
+}
+
+.container .text .social-media .icon {
+  margin-left: 2.4em;
+}
+
+.container .text .social-media .icon svg {
+  fill: var(--color-black);
+  width: 3.2em;
+  height: 3.2em;
+  margin: 0 0.8em;
+}
+.container .image {
+  background-image: url(../images/header-image.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 45%;
+  height: 62em;
+}
+
+/* Gallery Page */
+.main {
+  padding: 16em 8em 16em 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .heading-2 {
+  margin-bottom: 1.6em;
+}
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(9, 7.2em);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.6em 1.6em;
+}
+
+.gallery .gallery-item-1 {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 4;
+}
+
+.gallery .gallery-item-2 {
+  grid-row: 1 / span 3;
+  grid-column: 5 / span 4;
+}
+
+.gallery .gallery-item-3 {
+  grid-row: 1 / span 3;
+  grid-column: 9 / span 4;
+}
+.gallery .gallery-item-4 {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 8;
+}
+.gallery .gallery-item-5 {
+  grid-row: 4 / span 2;
+  grid-column: 9 / span 4;
+}
+.gallery .gallery-item-6 {
+  grid-row: 7 / span 3;
+  grid-column: 1 / span 3;
+}
+.gallery .gallery-item-7 {
+  grid-row: 7 / span 3;
+  grid-column: 4 / span 5;
+}
+.gallery .gallery-item-8 {
+  grid-row: 6 / span 4;
+  grid-column: 9 / span 4;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery > * {
+  width: 100%;
+}
+
+/* Mobile Responsiveness*/
+
+@media (max-width: 982px) {
+  .navbar {
+    display: block;
+    padding: 0px;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .navbar-logo {
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+  .nav {
+    display: none;
+    position: static;
+    /* text-align: center; */
+  }
+
+  .nav-extras {
+    display: block;
+    position: static;
+    padding: 2% 20px;
+  }
+
+  .nav-button {
+    margin: 0 0 0 0;
+  }
+
+  .nav-extras .nav-icons {
+    padding: 20px 5px 0;
+  }
+
+  /**** Nav Animation ****/
+
+  .toggle-nav {
+    display: block;
+    padding: 0 0 20px;
+  }
+
+  .nav-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    list-style: none;
+    float: none;
+    padding: 2% 5%;
+  }
+
+  .menu-bar {
+    background-color: #dedcdc;
+    width: 1.5em;
+    height: 2px;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+  /**** Menu Button Animation ****/
+
+  .hide-bar-two {
+    animation: bar-hide 1s linear forwards;
+  }
+
+  @keyframes bar-hide {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  .cross-bar-one {
+    animation: bar-cross-left 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-left {
+    10% {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    50% {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    100% {
+      transform: rotate(45deg) translate(3px, 2px);
+    }
+  }
+
+  .cross-bar-three {
+    animation: bar-cross-right 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-right {
+    10% {
+      transform: rotate(-45deg);
+    }
+
+    60% {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    100% {
+      transform: rotate(-45deg) translate(1px, -2px);
+    }
+  }
+}
